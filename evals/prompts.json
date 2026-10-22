@@ -1,0 +1,13 @@
+{
+  "prompts": [
+    {
+      "prompt": "List the GitHub repositories I own."
+    },
+    {
+      "prompt": "Find repositories related to Microsoft Kiota."
+    },
+    {
+      "prompt": "Show my GitHub profile."
+    }
+  ]
+}

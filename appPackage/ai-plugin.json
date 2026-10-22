@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilot/plugin/v2.4/schema.json",
+  "schema_version": "v2.4",
+  "name_for_human": "GitHub",
+  "description_for_human": "Live GitHub tools exposed through GitHub's hosted MCP server.",
+  "contact_email": "publisher-email@example.com",
+  "namespace": "apigithubc",
+  "functions": [],
+  "runtimes": [
+    {
+      "type": "RemoteMCPServer",
+      "spec": {
+        "url": "https://api.githubcopilot.com/mcp/"
+      },
+      "run_for_functions": ["*"],
+      "auth": {
+        "type": "OAuthPluginVault",
+        "reference_id": "${{MCP_DA_AUTH_ID_APIGITHUBC}}"
+      }
+    }
+  ]
+}
